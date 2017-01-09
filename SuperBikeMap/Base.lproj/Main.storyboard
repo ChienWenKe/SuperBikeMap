@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xpM-q4-rZm">
+                                <frame key="frameInset" minX="125" minY="36" width="125" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="標準"/>
+                                    <segment title="衛星"/>
+                                    <segment title="混合"/>
+                                </segments>
+                                <connections>
+                                    <action selector="mapTypeChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="ddT-Ge-0u9"/>
+                                </connections>
+                            </segmentedControl>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="iO9-XE-vkx">
+                                <frame key="frameInset" width="1000" height="1000"/>
+                            </mapView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W2w-Zg-0hf">
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bff-ZV-g5f">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s2m-AU-Mpy">
+                                                <frame key="frameInset" minX="22" minY="8" width="278" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHH-2d-Ofn">
+                                                <frame key="frameInset" minX="22" minY="37" width="313" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sHR-Y1-m6d">
+                                                <frame key="frameInset" minX="329" minY="22" width="31" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="導航"/>
+                                                <connections>
+                                                    <action selector="btn_NavigationPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9bQ-9B-kxZ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.25370878388394957" green="0.63137985445136025" blue="0.99835759401321411" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="btE-Hm-W8f"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jm9-4y-Rpw">
+                                        <frame key="frameInset" minX="17" minY="96" width="336" height="68"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="199" id="S0v-W8-DWk"/>
+                                    <constraint firstItem="Bff-ZV-g5f" firstAttribute="top" secondItem="W2w-Zg-0hf" secondAttribute="top" id="aLl-hL-TQh"/>
+                                    <constraint firstAttribute="trailing" secondItem="Bff-ZV-g5f" secondAttribute="trailing" id="kAu-nx-pmj"/>
+                                    <constraint firstItem="Bff-ZV-g5f" firstAttribute="leading" secondItem="W2w-Zg-0hf" secondAttribute="leading" id="yU2-Lg-e5L"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="W2w-Zg-0hf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3ij-Yd-mQC"/>
+                            <constraint firstItem="iO9-XE-vkx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Hmm-jD-yE9"/>
+                            <constraint firstAttribute="trailing" secondItem="W2w-Zg-0hf" secondAttribute="trailing" id="L3n-iU-YY0"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iO9-XE-vkx" secondAttribute="bottom" id="LUG-xv-7qc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="W2w-Zg-0hf" secondAttribute="bottom" id="d59-1C-Vj5"/>
+                            <constraint firstItem="iO9-XE-vkx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hVO-yV-F2p"/>
+                            <constraint firstAttribute="trailing" secondItem="iO9-XE-vkx" secondAttribute="trailing" id="sCi-x2-Tfu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btn_Navigation" destination="sHR-Y1-m6d" id="qgg-eE-oc7"/>
+                        <outlet property="label_Address" destination="KHH-2d-Ofn" id="X0p-HR-xkA"/>
+                        <outlet property="label_Title" destination="s2m-AU-Mpy" id="DfD-V1-zMP"/>
+                        <outlet property="mapView" destination="iO9-XE-vkx" id="DfK-l4-1w5"/>
+                        <outlet property="vc_Detail" destination="W2w-Zg-0hf" id="e8a-4u-eeO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.19999999999999" y="135.38230884557723"/>
+        </scene>
+    </scenes>
+</document>

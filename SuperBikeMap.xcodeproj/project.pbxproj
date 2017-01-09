@@ -1,0 +1,363 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		177F16701DED11820064ADF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 177F166F1DED11820064ADF7 /* main.m */; };
+		177F16731DED11820064ADF7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 177F16721DED11820064ADF7 /* AppDelegate.m */; };
+		177F16761DED11820064ADF7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 177F16751DED11820064ADF7 /* ViewController.m */; };
+		177F16791DED11820064ADF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177F16771DED11820064ADF7 /* Main.storyboard */; };
+		177F167C1DED11820064ADF7 /* SuperBikeMap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 177F167A1DED11820064ADF7 /* SuperBikeMap.xcdatamodeld */; };
+		177F167E1DED11820064ADF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 177F167D1DED11820064ADF7 /* Assets.xcassets */; };
+		177F16811DED11820064ADF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177F167F1DED11820064ADF7 /* LaunchScreen.storyboard */; };
+		177F168A1DED13C40064ADF7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 177F16891DED13C40064ADF7 /* MapKit.framework */; };
+		177F168C1DED13EE0064ADF7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 177F168B1DED13EE0064ADF7 /* CoreLocation.framework */; };
+		178D0B6C1DFFDBC600655D3A /* Parkinglot.m in Sources */ = {isa = PBXBuildFile; fileRef = 178D0B6B1DFFDBC600655D3A /* Parkinglot.m */; };
+		17AFE2B81E07757500593B06 /* Parkinglot.json in Resources */ = {isa = PBXBuildFile; fileRef = 17AFE2B71E07757500593B06 /* Parkinglot.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		177F166B1DED11820064ADF7 /* SuperBikeMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperBikeMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		177F166F1DED11820064ADF7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		177F16711DED11820064ADF7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		177F16721DED11820064ADF7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		177F16741DED11820064ADF7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		177F16751DED11820064ADF7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		177F16781DED11820064ADF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		177F167B1DED11820064ADF7 /* SuperBikeMap.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SuperBikeMap.xcdatamodel; sourceTree = "<group>"; };
+		177F167D1DED11820064ADF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		177F16801DED11820064ADF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		177F16821DED11820064ADF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		177F16891DED13C40064ADF7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		177F168B1DED13EE0064ADF7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		178D0B6A1DFFDBC600655D3A /* Parkinglot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parkinglot.h; sourceTree = "<group>"; };
+		178D0B6B1DFFDBC600655D3A /* Parkinglot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parkinglot.m; sourceTree = "<group>"; };
+		17AFE2B71E07757500593B06 /* Parkinglot.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Parkinglot.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		177F16681DED11820064ADF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				177F168C1DED13EE0064ADF7 /* CoreLocation.framework in Frameworks */,
+				177F168A1DED13C40064ADF7 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		177F16621DED11820064ADF7 = {
+			isa = PBXGroup;
+			children = (
+				177F166D1DED11820064ADF7 /* SuperBikeMap */,
+				177F166C1DED11820064ADF7 /* Products */,
+				177F16881DED13C40064ADF7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		177F166C1DED11820064ADF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				177F166B1DED11820064ADF7 /* SuperBikeMap.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		177F166D1DED11820064ADF7 /* SuperBikeMap */ = {
+			isa = PBXGroup;
+			children = (
+				177F16711DED11820064ADF7 /* AppDelegate.h */,
+				177F16721DED11820064ADF7 /* AppDelegate.m */,
+				177F16741DED11820064ADF7 /* ViewController.h */,
+				177F16751DED11820064ADF7 /* ViewController.m */,
+				178D0B6A1DFFDBC600655D3A /* Parkinglot.h */,
+				178D0B6B1DFFDBC600655D3A /* Parkinglot.m */,
+				177F16771DED11820064ADF7 /* Main.storyboard */,
+				177F167D1DED11820064ADF7 /* Assets.xcassets */,
+				177F167F1DED11820064ADF7 /* LaunchScreen.storyboard */,
+				177F16821DED11820064ADF7 /* Info.plist */,
+				177F167A1DED11820064ADF7 /* SuperBikeMap.xcdatamodeld */,
+				17AFE2B71E07757500593B06 /* Parkinglot.json */,
+				177F166E1DED11820064ADF7 /* Supporting Files */,
+			);
+			path = SuperBikeMap;
+			sourceTree = "<group>";
+		};
+		177F166E1DED11820064ADF7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				177F166F1DED11820064ADF7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		177F16881DED13C40064ADF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				177F168B1DED13EE0064ADF7 /* CoreLocation.framework */,
+				177F16891DED13C40064ADF7 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		177F166A1DED11820064ADF7 /* SuperBikeMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 177F16851DED11820064ADF7 /* Build configuration list for PBXNativeTarget "SuperBikeMap" */;
+			buildPhases = (
+				177F16671DED11820064ADF7 /* Sources */,
+				177F16681DED11820064ADF7 /* Frameworks */,
+				177F16691DED11820064ADF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SuperBikeMap;
+			productName = SuperBikeMap;
+			productReference = 177F166B1DED11820064ADF7 /* SuperBikeMap.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		177F16631DED11820064ADF7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = CHIEN;
+				TargetAttributes = {
+					177F166A1DED11820064ADF7 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 485QL62494;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 177F16661DED11820064ADF7 /* Build configuration list for PBXProject "SuperBikeMap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 177F16621DED11820064ADF7;
+			productRefGroup = 177F166C1DED11820064ADF7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				177F166A1DED11820064ADF7 /* SuperBikeMap */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		177F16691DED11820064ADF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				177F16811DED11820064ADF7 /* LaunchScreen.storyboard in Resources */,
+				177F167E1DED11820064ADF7 /* Assets.xcassets in Resources */,
+				17AFE2B81E07757500593B06 /* Parkinglot.json in Resources */,
+				177F16791DED11820064ADF7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		177F16671DED11820064ADF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				177F16761DED11820064ADF7 /* ViewController.m in Sources */,
+				178D0B6C1DFFDBC600655D3A /* Parkinglot.m in Sources */,
+				177F167C1DED11820064ADF7 /* SuperBikeMap.xcdatamodeld in Sources */,
+				177F16731DED11820064ADF7 /* AppDelegate.m in Sources */,
+				177F16701DED11820064ADF7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		177F16771DED11820064ADF7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				177F16781DED11820064ADF7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		177F167F1DED11820064ADF7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				177F16801DED11820064ADF7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		177F16831DED11820064ADF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		177F16841DED11820064ADF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		177F16861DED11820064ADF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 485QL62494;
+				INFOPLIST_FILE = SuperBikeMap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.iii.SuperBikeMap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		177F16871DED11820064ADF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 485QL62494;
+				INFOPLIST_FILE = SuperBikeMap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.iii.SuperBikeMap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		177F16661DED11820064ADF7 /* Build configuration list for PBXProject "SuperBikeMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				177F16831DED11820064ADF7 /* Debug */,
+				177F16841DED11820064ADF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		177F16851DED11820064ADF7 /* Build configuration list for PBXNativeTarget "SuperBikeMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				177F16861DED11820064ADF7 /* Debug */,
+				177F16871DED11820064ADF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		177F167A1DED11820064ADF7 /* SuperBikeMap.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				177F167B1DED11820064ADF7 /* SuperBikeMap.xcdatamodel */,
+			);
+			currentVersion = 177F167B1DED11820064ADF7 /* SuperBikeMap.xcdatamodel */;
+			path = SuperBikeMap.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 177F16631DED11820064ADF7 /* Project object */;
+}
